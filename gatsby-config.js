@@ -6,10 +6,16 @@ const path = require("path")
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Anthony Salemo`,
+    description: `A personal portfolio`,
+    author: `Anthony Salemo`,
+  },
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -33,6 +39,18 @@ module.exports = {
       options: {
         alias: { "@components": path.resolve(__dirname, "src/components") },
         extensions: [],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Anthony Salemo`,
+        short_name: `Anthony Salemo`,
+        start_url: `/`,
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: `standalone`,
+        icon: `static/favicon.ico`, // This path is relative to the root of the site.
       },
     },
   ],

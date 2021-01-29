@@ -1,9 +1,15 @@
 import Landing from "@components/landing/landing"
-import { graphql } from 'gatsby'
-import React from "react"
+import SEO from "@components/seo/seo"
+import { graphql } from "gatsby"
+import React, { Fragment } from "react"
 
 export default function Home({ data }) {
-  return <Landing data={data} />
+  return (
+    <Fragment>
+      <SEO title="Portfolio" />
+      <Landing data={data} />
+    </Fragment>
+  )
 }
 
 export const query = graphql`
