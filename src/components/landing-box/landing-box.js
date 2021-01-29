@@ -16,12 +16,12 @@ export default function LandingBox() {
       </div>
       <div className="text-white flex justify-around bg-white bg-opacity-25 mx-2 sm:mx-12 p-4 text-sm sm:text-base font-semibold">
         <div>
-          <Link to="#">
+          <a href="https://www.linkedin.com/in/ajssalemo/" target="blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} size="2x" />
-          </Link>
-          <Link to="#" className="ml-4">
+          </a>
+          <a href="https://github.com/Ajsalemo" target="blank" rel="noopener noreferrer" className="ml-4">
             <FontAwesomeIcon icon={faGithubSquare} size="2x" />
-          </Link>
+          </a>
         </div>
         <Link to="#">Portfolio</Link>
         <Link to="#">About</Link>
