@@ -17,7 +17,7 @@ export default function SEO({ description, lang, meta, title }) {
       }
     `
   )
-
+  console.log(site.siteMetadata.author)
   const metaDescription = description || site.siteMetadata.description
   return (
     <Helmet
@@ -52,6 +52,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  author: `Anthony Salemo`
 }
 
 SEO.propTypes = {
