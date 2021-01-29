@@ -11,7 +11,6 @@ export default function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
-            author
           }
         }
       }
@@ -52,7 +51,6 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-  author: `Anthony Salemo`
 }
 
 SEO.propTypes = {
