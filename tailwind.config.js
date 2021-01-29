@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme")
 
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -10,11 +10,13 @@ module.exports = {
       },
     },
     fontFamily: {
-      pacifico: ["Pacifico",  ...defaultTheme.fontFamily.sans],
+      pacifico: ["Pacifico", ...defaultTheme.fontFamily.sans],
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      animation: ["hover"],
+    },
   },
   plugins: [],
 }
