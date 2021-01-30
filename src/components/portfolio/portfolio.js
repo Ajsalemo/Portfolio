@@ -9,7 +9,7 @@ export default function Portfolio({ data }) {
         Portfolio
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 ">
-        {data.allFile.edges.map((src, i) => (
+        {data.allPortfolioImages.edges.map((src, i) => (
           <Link
             // The .substr method removes the file extension
             // The .replace method replaces the /static/<rid>/subfolder/ path leading to the image with an empty string
@@ -17,11 +17,16 @@ export default function Portfolio({ data }) {
             to={src.node.childImageSharp.fluid.src
               .substr(0, src.node.childImageSharp.fluid.src.lastIndexOf("."))
               .replace(/^.*[\\/]/, "")}
+            key={src.node.childImageSharp.fluid.src.replace(/^.*[\\/]/, "")}
           >
             <Img
               fluid={src.node.childImageSharp.fluid}
-              key={i}
               className="h-fit"
+              alt="Images of portfolio projects"
+              key={`${i} - ${src.node.childImageSharp.fluid.src.replace(
+                /^.*[\\/]/,
+                ""
+              )}`}
             />
           </Link>
         ))}
@@ -29,19 +34,3 @@ export default function Portfolio({ data }) {
     </div>
   )
 }
-
-export const portfolioQuery = graphql`
-  query PortfolioQuery {
-    allFile(filter: { relativePath: { regex: "/portfolio-images/" } }) {
-      edges {
-        node {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
-`

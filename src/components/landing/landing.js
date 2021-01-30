@@ -7,7 +7,7 @@ export default function Landing({ data }) {
     <div className="relative">
       <Img
         className="h-screen"
-        fluid={data.file.childImageSharp.fluid}
+        fluid={data.landing.childImageSharp.fluid}
         alt="A picture of the Brooklyn Bridge"
       />
       <LandingBox />

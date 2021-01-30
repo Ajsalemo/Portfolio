@@ -6,19 +6,20 @@ import React, { Fragment } from "react"
 import About from "../components/about/about"
 
 export default function Home({ data }) {
+  console.log(data)
   return (
     <Fragment>
       <SEO title="Portfolio" />
       <Landing data={data} />
       <Portfolio data={data} />
-      <About />
+      <About data={data} />
     </Fragment>
   )
 }
 
 export const indexQuery = graphql`
   query indexQuery {
-    file(relativePath: { eq: "general/dumbo.jpg" }) {
+    landing: file(relativePath: { eq: "general/dumbo.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -26,7 +27,15 @@ export const indexQuery = graphql`
       }
     }
 
-    allFile(filter: { relativePath: { regex: "/portfolio-images/" } }) {
+    about: file(relativePath: { eq: "general/self.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
+    allPortfolioImages: allFile(filter: { relativePath: { regex: "/portfolio-images/" } }) {
       edges {
         node {
           childImageSharp {
