@@ -3,6 +3,7 @@ import Portfolio from "@components/portfolio/portfolio"
 import SEO from "@components/seo/seo"
 import { graphql } from "gatsby"
 import React, { Fragment } from "react"
+import About from "../components/about/about"
 
 export default function Home({ data }) {
   return (
@@ -10,6 +11,7 @@ export default function Home({ data }) {
       <SEO title="Portfolio" />
       <Landing data={data} />
       <Portfolio data={data} />
+      <About />
     </Fragment>
   )
 }
