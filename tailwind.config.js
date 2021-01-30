@@ -8,6 +8,9 @@ module.exports = {
       inset: {
         "1/10": "10%",
       },
+      height: {
+        fit: "fit-content",
+      },
     },
     fontFamily: {
       pacifico: ["Pacifico", ...defaultTheme.fontFamily.sans],
