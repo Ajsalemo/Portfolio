@@ -41,8 +41,8 @@ export default function About({ data }) {
             I either currently or have worked with technologies such as:
             <ul>
               <li>
-                <b>Languages</b>: HTML5, Javascript, Typescript, Python, Java, C# and
-                Bash
+                <b>Languages</b>: HTML5, Javascript, Typescript, Python, Java,
+                C# and Bash
               </li>
               <li>
                 <b>Source Control:</b> Such as Git, Github and Azure's Kudu
@@ -92,10 +92,17 @@ export default function About({ data }) {
               <li>
                 <b>Others: </b> Other various technologies such as WordPress,
                 Apollo, GraphQL, Firestore, load testers and performance
-                profilers, and concepts such as Mobile and Responsive design,
-                SEO, User Interface(UI)/User Experience(UX) and accessibility
+                profilers, REST API implementation; Additionally concepts and
+                practices such as debugging, Mobile and Responsive design, SEO,
+                User Interface(UI)/User Experience(UX) and accessibility
               </li>
             </ul>
+          </p>
+          <p className="text-white pb-8 text-sm px-1">
+            Outside of work I am still very much involved with full stack
+            development and am keen on experimenting with different types of
+            stacks and technologies. I also enjoy playing guitar, exploring new
+            areas, travelling, house and car projects, music, and gaming.
           </p>
         </div>
       </div>
