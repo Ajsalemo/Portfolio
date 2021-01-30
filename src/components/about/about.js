@@ -39,65 +39,65 @@ export default function About({ data }) {
           </p>
           <p className="text-white pb-8 text-sm px-1">
             I either currently or have worked with technologies such as:
-            <ul>
-              <li>
-                <b>Languages</b>: HTML5, Javascript, Typescript, Python, Java,
-                C# and Bash
-              </li>
-              <li>
-                <b>Source Control:</b> Such as Git, Github and Azure's Kudu
-              </li>
-              <li>
-                <b>Deployment</b>: Integrating projects with Gitlab CI/CD, Azure
-                DevOps pipelines, and various other Azure methods such as Oryx
-                build agent, VSCode/Visual Studio deployment and ZipDeploy, as
-                well as deployment through FTP using FileZilla or WinSCP.
-              </li>
-              <li>
-                <b>Operating systems:</b> Windows and Linux, including
-                virtualized OS management with the use of Linux VM's. Linux
-                distributions like Ubuntu and Alpine.
-              </li>
-              <li>
-                <b>Containerization:</b> Containerizing applications with the
-                use of Docker and Docker-compose for both Windows and Linux
-              </li>
-              <li>
-                <b>Package Managers and CLI tools:</b> Such as NPM, Yarn, Pip
-                and Pipenv, Maven, APT and APT-GET, APK, AZ CLI, Github CLI,
-                PSQL and others
-              </li>
-              <li>
-                <b>Web and Application Servers:</b> Apache, NGINX, IIS, Tomcat,
-                Pm2, Gunicorn and others
-              </li>
-              <li>
-                <b>Application libraries and frameworks: </b>
-                <i>Python </i>-<b> Flask and Django. </b> <i>Java </i>-
-                <b> Springboot. </b>
-                <i>C# </i>- <b>ASP .NET Core. </b>
-                <i>Javascript </i>-{" "}
-                <b>Node, Express, React, Gatsby, Angular, Next and Vue</b>
-              </li>
-              <li>
-                <b>CSS libraries and frameworks: </b>Material UI, TailwindCSS,
-                Materialize, Bulma, Bootstrap as well as CSS3 and SCSS
-              </li>
-              <li>
-                <b>Databases: </b>PostgreSQL, MySQL and MongoDB
-              </li>
-              <li>
-                <b>Authentication: </b>Auth0, Firebase, JWT
-              </li>
-              <li>
-                <b>Others: </b> Other various technologies such as WordPress,
-                Apollo, GraphQL, Firestore, load testers and performance
-                profilers, REST API implementation; Additionally concepts and
-                practices such as debugging, Mobile and Responsive design, SEO,
-                User Interface(UI)/User Experience(UX) and accessibility
-              </li>
-            </ul>
           </p>
+          <ul className="text-white pb-8 text-sm px-1">
+            <li>
+              <b>Languages</b>: HTML5, Javascript, Typescript, Python, Java, C#
+              and Bash
+            </li>
+            <li>
+              <b>Source Control:</b> Such as Git, Github and Azure's Kudu
+            </li>
+            <li>
+              <b>Deployment</b>: Integrating projects with Gitlab CI/CD, Azure
+              DevOps pipelines, and various other Azure methods such as Oryx
+              build agent, VSCode/Visual Studio deployment and ZipDeploy, as
+              well as deployment through FTP using FileZilla or WinSCP.
+            </li>
+            <li>
+              <b>Operating systems:</b> Windows and Linux, including virtualized
+              OS management with the use of Linux VM's. Linux distributions like
+              Ubuntu and Alpine.
+            </li>
+            <li>
+              <b>Containerization:</b> Containerizing applications with the use
+              of Docker and Docker-compose for both Windows and Linux
+            </li>
+            <li>
+              <b>Package Managers and CLI tools:</b> Such as NPM, Yarn, Pip and
+              Pipenv, Maven, APT and APT-GET, APK, AZ CLI, Github CLI, PSQL and
+              others
+            </li>
+            <li>
+              <b>Web and Application Servers:</b> Apache, NGINX, IIS, Tomcat,
+              Pm2, Gunicorn and others
+            </li>
+            <li>
+              <b>Application libraries and frameworks: </b>
+              <i>Python </i>-<b> Flask and Django. </b> <i>Java </i>-
+              <b> Springboot. </b>
+              <i>C# </i>- <b>ASP .NET Core. </b>
+              <i>Javascript </i>-{" "}
+              <b>Node, Express, React, Gatsby, Angular, Next and Vue</b>
+            </li>
+            <li>
+              <b>CSS libraries and frameworks: </b>Material UI, TailwindCSS,
+              Materialize, Bulma, Bootstrap as well as CSS3 and SCSS
+            </li>
+            <li>
+              <b>Databases: </b>PostgreSQL, MySQL and MongoDB
+            </li>
+            <li>
+              <b>Authentication: </b>Auth0, Firebase, JWT
+            </li>
+            <li>
+              <b>Others: </b> Other various technologies such as WordPress,
+              Apollo, GraphQL, Firestore, load testers and performance
+              profilers, REST API implementation; Additionally concepts and
+              practices such as debugging, Mobile and Responsive design, SEO,
+              User Interface(UI)/User Experience(UX) and accessibility
+            </li>
+          </ul>
           <p className="text-white pb-8 text-sm px-1">
             Outside of work I am still very much involved with full stack
             development and am keen on experimenting with different types of

@@ -1,3 +1,4 @@
+import Footer from "@components/footer/footer"
 import Landing from "@components/landing/landing"
 import Portfolio from "@components/portfolio/portfolio"
 import SEO from "@components/seo/seo"
@@ -6,13 +7,13 @@ import React, { Fragment } from "react"
 import About from "../components/about/about"
 
 export default function Home({ data }) {
-  console.log(data)
   return (
     <Fragment>
       <SEO title="Portfolio" />
       <Landing data={data} />
       <Portfolio data={data} />
       <About data={data} />
+      <Footer />
     </Fragment>
   )
 }
@@ -35,7 +36,9 @@ export const indexQuery = graphql`
       }
     }
 
-    allPortfolioImages: allFile(filter: { relativePath: { regex: "/portfolio-images/" } }) {
+    allPortfolioImages: allFile(
+      filter: { relativePath: { regex: "/portfolio-images/" } }
+    ) {
       edges {
         node {
           childImageSharp {
