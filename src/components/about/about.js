@@ -41,7 +41,7 @@ export default function About({ data }) {
             I either currently or have worked with technologies such as:
             <ul>
               <li>
-                <b>Languages</b>: Javascript, Typescript, Python, Java, C# and
+                <b>Languages</b>: HTML5, Javascript, Typescript, Python, Java, C# and
                 Bash
               </li>
               <li>
