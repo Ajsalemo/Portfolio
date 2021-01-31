@@ -12,11 +12,11 @@ export default function Template({
     <div>
       <Navbar />
       <div className="min-h-screen h-full bg-blue-400 text-center px-12">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-pacifico text-center pt-12 text-white">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-pacifico text-center pt-12 text-white">
           {frontmatter.title}
         </h1>
-        <h3 className="text-white text-sm pt-12 font-semibold">{frontmatter.descriptionMain}</h3>
-        <h4 className="text-white text-sm pt-6">{frontmatter.descriptionSecondary}</h4>
+        <h3 className="text-white text-xs sm:text-sm pt-12 font-semibold">{frontmatter.descriptionMain}</h3>
+        <h4 className="text-white text-xs sm:text-sm pt-6">{frontmatter.descriptionSecondary}</h4>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
       <Footer />
