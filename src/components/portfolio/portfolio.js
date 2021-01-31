@@ -8,7 +8,7 @@ export default function Portfolio({ data }) {
       <h2 className="text-white text-4xl sm:text-5xl lg:text-6xl font-pacifico py-12 text-center">
         Portfolio
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {data.allPortfolioImages.edges.map((src, i) => (
           <Link
             // The .substr method removes the file extension
