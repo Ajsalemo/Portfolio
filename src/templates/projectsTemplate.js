@@ -2,6 +2,7 @@ import Footer from "@components/footer/footer"
 import Navbar from "@components/navbar/navbar"
 import SEO from "@components/seo/seo"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import React, { Fragment } from "react"
 
 export default function Template({
@@ -11,13 +12,13 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Fragment>
-      <SEO 
+      <SEO
         title={frontmatter.title}
         description={frontmatter.descriptionMain}
       />
       <div>
         <Navbar />
-        <div className="min-h-screen h-full bg-blue-400 text-center px-12">
+        <div className="min-h-screen h-full bg-blue-400 text-center px-6">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-pacifico text-center pt-12 text-white">
             {frontmatter.title}
           </h1>
@@ -27,6 +28,7 @@ export default function Template({
           <h4 className="text-white text-xs sm:text-sm pt-6">
             {frontmatter.descriptionSecondary}
           </h4>
+          <Img fluid={frontmatter.imageOne.childImageSharp.fluid} />
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
         <Footer />
@@ -44,6 +46,13 @@ export const pageQuery = graphql`
         title
         descriptionMain
         descriptionSecondary
+        imageOne {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
