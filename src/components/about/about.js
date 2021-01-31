@@ -37,7 +37,7 @@ export default function About({ data }) {
           <p className="text-white pb-8 text-sm px-1">
             I am proficient with Javascript, React and Node.js.
           </p>
-          <p className="text-white pb-8 text-sm px-1">
+          <p className="text-white pb-2 text-sm px-1">
             I either currently or have worked with technologies such as:
           </p>
           <ul className="text-white pb-8 text-sm px-1">
@@ -81,7 +81,7 @@ export default function About({ data }) {
               <b>Node, Express, React, Gatsby, Angular, Next and Vue</b>
             </li>
             <li>
-              <b>CSS libraries and frameworks: </b>Material UI, TailwindCSS,
+              <b>CSS libraries and frameworks: </b>Styled Components, Material UI, TailwindCSS,
               Materialize, Bulma, Bootstrap as well as CSS3 and SCSS
             </li>
             <li>
@@ -95,7 +95,7 @@ export default function About({ data }) {
               Apollo, GraphQL, Firestore, load testers and performance
               profilers, REST API implementation; Additionally concepts and
               practices such as debugging, Mobile and Responsive design, SEO,
-              User Interface(UI)/User Experience(UX) and accessibility
+              User Interface(UI)/User Experience(UX) and Accessibility
             </li>
           </ul>
           <p className="text-white pb-8 text-sm px-1">

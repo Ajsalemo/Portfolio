@@ -2,11 +2,11 @@ import { faCode, faDesktop } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 
-export default function ProjectLinks() {
+export default function ProjectLinks({ githubLink, websiteLink }) {
   return (
     <div className="flex justify-evenly pb-6">
       <a
-        href="#"
+        href={githubLink}
         rel="noopener noreferrer"
         className="text-sm sm:text-base text-white"
       >
@@ -14,7 +14,7 @@ export default function ProjectLinks() {
         Code
       </a>
       <a
-        href="#"
+        href={websiteLink}
         rel="noopener noreferrer"
         className="text-sm sm:text-base text-white"
       >

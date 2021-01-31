@@ -11,6 +11,7 @@ export default function Template({
 }) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
+  console.log(frontmatter.imageOne.childImageSharp.fluid)
   return (
     <Fragment>
       <SEO
@@ -29,8 +30,16 @@ export default function Template({
           <h4 className="text-white text-xs sm:text-sm py-6">
             {frontmatter.descriptionSecondary}
           </h4>
-          <ProjectLinks />
-          <Img fluid={frontmatter.imageOne.childImageSharp.fluid} />
+          <ProjectLinks
+            githubLink={frontmatter.githubLink}
+            websiteLink={frontmatter.websiteLink}
+          />
+          <div>
+            <Img
+              fluid={frontmatter.imageOne.childImageSharp.fluid}
+              className="lg:w-3/4 mx-auto shadow-2xl border-solid border-2 sm:border-4 rounded"
+            />
+          </div>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
         <Footer />
@@ -48,9 +57,11 @@ export const pageQuery = graphql`
         title
         descriptionMain
         descriptionSecondary
+        githubLink
+        websiteLink
         imageOne {
           childImageSharp {
-            fluid {
+            fluid(maxWidth: 1920) {
               ...GatsbyImageSharpFluid
             }
           }
