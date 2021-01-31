@@ -25,9 +25,12 @@ export default function Template({
           <h3 className="text-white text-xs sm:text-sm pt-12 font-semibold">
             {frontmatter.descriptionMain}
           </h3>
-          <h4 className="text-white text-xs sm:text-sm pt-6">
+          <h4 className="text-white text-xs sm:text-sm py-6">
             {frontmatter.descriptionSecondary}
           </h4>
+          <div>
+            
+          </div>
           <Img fluid={frontmatter.imageOne.childImageSharp.fluid} />
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
