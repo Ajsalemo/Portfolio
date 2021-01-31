@@ -1,5 +1,6 @@
 import Footer from "@components/footer/footer"
 import Navbar from "@components/navbar/navbar"
+import ProjectLinks from "@components/project-links/project-links"
 import SEO from "@components/seo/seo"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -28,9 +29,7 @@ export default function Template({
           <h4 className="text-white text-xs sm:text-sm py-6">
             {frontmatter.descriptionSecondary}
           </h4>
-          <div>
-            
-          </div>
+          <ProjectLinks />
           <Img fluid={frontmatter.imageOne.childImageSharp.fluid} />
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
