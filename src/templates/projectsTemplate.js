@@ -19,7 +19,7 @@ export default function Template({
       />
       <div>
         <Navbar />
-        <div className="min-h-screen h-full bg-blue-400 text-center px-6 pb-12">
+        <div className="min-h-screen h-full bg-gray-700 text-center px-6 pb-12">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-pacifico text-center pt-12 text-white">
             {frontmatter.title}
           </h1>
