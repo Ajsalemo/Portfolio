@@ -9,6 +9,7 @@ export default function ProjectLinks({ githubLink, websiteLink }) {
         href={githubLink}
         rel="noopener noreferrer"
         className="text-sm sm:text-base text-white"
+        target="_blank"
       >
         <FontAwesomeIcon icon={faCode} className="mr-2" />
         Code
@@ -17,6 +18,7 @@ export default function ProjectLinks({ githubLink, websiteLink }) {
         href={websiteLink}
         rel="noopener noreferrer"
         className="text-sm sm:text-base text-white"
+        target="_blank"
       >
         <FontAwesomeIcon icon={faDesktop} className="mr-2" />
         Website

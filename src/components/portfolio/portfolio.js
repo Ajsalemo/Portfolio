@@ -18,6 +18,7 @@ export default function Portfolio({ data }) {
               .substr(0, src.node.childImageSharp.fluid.src.lastIndexOf("."))
               .replace(/^.*[\\/]/, "")}
             key={src.node.childImageSharp.fluid.src.replace(/^.*[\\/]/, "")}
+            className="hover:border-blue-900 border-black border-4 transition ease-in-out duration-700 rounded"
           >
             <Img
               fluid={src.node.childImageSharp.fluid}

@@ -38,13 +38,13 @@ export default function LandingBox() {
             />
           </a>
         </div>
-        <Link to="#" className="text-xs sm:text-base transition duration-500 hover:animate-pulse hover:text-blue-100">
+        <Link to="#" className="text-xs sm:text-base">
           Portfolio
         </Link>
-        <Link to="#" className="text-xs sm:text-base hover:animate-pulse hover:text-blue-100">
+        <Link to="#" className="text-xs sm:text-base">
           About
         </Link>
-        <a href="mailto:ajssalemo@gmail.com" className="text-xs sm:text-base hover:animate-pulse hover:text-blue-100">
+        <a href="mailto:ajssalemo@gmail.com" className="text-xs sm:text-base">
           Contact
         </a>
       </div>

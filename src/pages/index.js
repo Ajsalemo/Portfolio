@@ -19,7 +19,7 @@ export default function Home({ data }) {
 }
 
 export const indexQuery = graphql`
-  query indexQuery {
+  query IndexQuery {
     landing: file(relativePath: { eq: "general/dumbo.jpg" }) {
       childImageSharp {
         fluid {
