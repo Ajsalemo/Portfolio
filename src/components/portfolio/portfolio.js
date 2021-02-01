@@ -12,9 +12,7 @@ export default function Portfolio({ data }) {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {data.allPortfolioImages.edges.map((src, i) => (
           <Link
-            // The .substr method removes the file extension
-            // The .replace method replaces the /static/<rid>/subfolder/ path leading to the image with an empty string
-            // To strip the prefixed file path and file extension to retrieve just the image name to use as a page link
+            // Use nodes 'path' module to get the filename without the extension, which it does when the second arg to path.basename is provided in the form of path.extname
             to={path.basename(
               src.node.childImageSharp.fluid.src,
               path.extname(src.node.childImageSharp.fluid.src)
