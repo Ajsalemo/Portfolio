@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import React from "react"
+const path = require("path")
 
 export default function Portfolio({ data }) {
   return (
@@ -14,10 +15,14 @@ export default function Portfolio({ data }) {
             // The .substr method removes the file extension
             // The .replace method replaces the /static/<rid>/subfolder/ path leading to the image with an empty string
             // To strip the prefixed file path and file extension to retrieve just the image name to use as a page link
-            to={src.node.childImageSharp.fluid.src
-              .substr(0, src.node.childImageSharp.fluid.src.lastIndexOf("."))
-              .replace(/^.*[\\/]/, "")}
-            key={src.node.childImageSharp.fluid.src.replace(/^.*[\\/]/, "")}
+            to={path.basename(
+              src.node.childImageSharp.fluid.src,
+              path.extname(src.node.childImageSharp.fluid.src)
+            )}
+            key={path.basename(
+              src.node.childImageSharp.fluid.src,
+              path.extname(src.node.childImageSharp.fluid.src)
+            )}
             className="hover:border-blue-900 border-black border-4 transition ease-in-out duration-700 rounded"
           >
             <Img
