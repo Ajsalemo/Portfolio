@@ -5,7 +5,7 @@ descriptionMain: "Search for Urban Art - built with SASS, React, Redux, Bootstra
 descriptionSecondary: "Utilizing Flickr's API, a user can search for cities and it's related Graffiti, Murals, Street Art and Tags. By clicking the drop down, they can search by pre-defined cities or types of Graffiti."
 imageOne: ../assets/images/project-images/graffiti/graffiti-home.jpeg
 imageTwo: ../assets/images/project-images/graffiti/graffiti-two.jpeg
-imageThree: ../assets/images/project-images/graffiti/graffiti-three.jpeg
+imageThree: ../assets/images/project-images/graffiti/graffiti-three.jpg
 githubLink: "https://github.com/Ajsalemo/Graffiti"
 websiteLink: "https://urban-art.netlify.app/"
 ---
