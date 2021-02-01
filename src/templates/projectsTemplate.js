@@ -19,7 +19,7 @@ export default function Template({
       />
       <div>
         <Navbar />
-        <div className="min-h-screen h-full bg-blue-400 text-center px-6">
+        <div className="min-h-screen h-full bg-blue-400 text-center px-6 pb-12">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-pacifico text-center pt-12 text-white">
             {frontmatter.title}
           </h1>
@@ -36,11 +36,11 @@ export default function Template({
           <div>
             <Img
               fluid={frontmatter.imageOne.childImageSharp.fluid}
-              className="lg:w-3/4 mx-auto shadow-2xl border-solid border-2 sm:border-4 rounded"
+              className="lg:w-3/4 mx-auto shadow-2xl border-solid border-2 sm:border-4 rounded mb-4"
             />
             <Img
               fluid={frontmatter.imageTwo.childImageSharp.fluid}
-              className="lg:w-3/4 mx-auto shadow-2xl border-solid border-2 sm:border-4 rounded"
+              className="lg:w-3/4 mx-auto shadow-2xl border-solid border-2 sm:border-4 rounded mb-4"
             />
             <Img
               fluid={frontmatter.imageThree.childImageSharp.fluid}
