@@ -1,7 +1,5 @@
-import { faLongArrowAltUp } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import ScrollTo from "@components/scrollto/scrollto"
 import Img from "gatsby-image"
-import scrollTo from "gatsby-plugin-smoothscroll"
 import React from "react"
 
 export default function About({ data }) {
@@ -113,13 +111,7 @@ export default function About({ data }) {
           </p>
         </div>
       </div>
-      <button onClick={() => scrollTo("#landing")} aria-label="Scroll to top">
-        <FontAwesomeIcon
-          icon={faLongArrowAltUp}
-          size="2x"
-          className="animate-bounce"
-        />
-      </button>
+      <ScrollTo location="#landing" />
     </div>
   )
 }

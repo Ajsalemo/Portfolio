@@ -1,6 +1,7 @@
 import Footer from "@components/footer/footer"
 import Navbar from "@components/navbar/navbar"
 import ProjectLinks from "@components/project-links/project-links"
+import ScrollTo from "@components/scrollto/scrollto"
 import SEO from "@components/seo/seo"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -17,9 +18,9 @@ export default function Template({
         title={frontmatter.title}
         description={frontmatter.descriptionMain}
       />
-      <div>
+      <div id="templateTop">
         <Navbar />
-        <div className="min-h-screen h-full bg-gray-700 text-center px-6 pb-12">
+        <div className="min-h-screen h-full bg-gray-700 text-center px-6">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-pacifico text-center pt-12 text-white">
             {frontmatter.title}
           </h1>
@@ -48,6 +49,7 @@ export default function Template({
             />
           </div>
           <div dangerouslySetInnerHTML={{ __html: html }} />
+          <ScrollTo location="#templateTop" className="mt-4" />
         </div>
         <Footer />
       </div>
