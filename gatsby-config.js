@@ -61,5 +61,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-smoothscroll`,
   ],
 }

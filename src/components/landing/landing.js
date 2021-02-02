@@ -4,7 +4,7 @@ import React from "react"
 
 export default function Landing({ data }) {
   return (
-    <div className="relative">
+    <div className="relative" id="landing">
       <Img
         className="min-h-screen h-full"
         fluid={data.landing.childImageSharp.fluid}

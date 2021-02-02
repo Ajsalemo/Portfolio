@@ -1,9 +1,15 @@
+import { faLongArrowAltUp } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Img from "gatsby-image"
+import scrollTo from "gatsby-plugin-smoothscroll"
 import React from "react"
 
 export default function About({ data }) {
   return (
-    <div className="min-h-screen h-full bg-blue-400 text-center px-4 md:px-16" id="about">
+    <div
+      className="min-h-screen h-full bg-blue-400 text-center px-4 md:px-16"
+      id="about"
+    >
       <h2 className="text-white text-4xl sm:text-5xl lg:text-6xl font-pacifico py-12">
         About
       </h2>
@@ -81,8 +87,9 @@ export default function About({ data }) {
               <b>Node, Express, React, Gatsby, Angular, Next and Vue</b>
             </li>
             <li>
-              <b>CSS libraries and frameworks: </b>Styled Components, Material UI, TailwindCSS,
-              Materialize, Bulma, Bootstrap as well as CSS3 and SCSS
+              <b>CSS libraries and frameworks: </b>Styled Components, Material
+              UI, TailwindCSS, Materialize, Bulma, Bootstrap as well as CSS3 and
+              SCSS
             </li>
             <li>
               <b>Databases: </b>PostgreSQL, MySQL and MongoDB
@@ -106,6 +113,13 @@ export default function About({ data }) {
           </p>
         </div>
       </div>
+      <button onClick={() => scrollTo("#landing")} aria-label="Scroll to top">
+        <FontAwesomeIcon
+          icon={faLongArrowAltUp}
+          size="2x"
+          className="animate-bounce"
+        />
+      </button>
     </div>
   )
 }
