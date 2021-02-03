@@ -1,7 +1,7 @@
 import Footer from "@components/footer/footer"
 import Navbar from "@components/navbar/navbar"
 import SEO from "@components/seo/seo"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import React, { Fragment } from "react"
 

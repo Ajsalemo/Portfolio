@@ -20,22 +20,18 @@ export default function LandingBox() {
             href="https://www.linkedin.com/in/ajssalemo/"
             target="blank"
             rel="noopener noreferrer"
+            aria-label="Link to LinkedIn"
           >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="text-base sm:text-3xl"
-            />
+            <FontAwesomeIcon icon={faLinkedin} className="text-3xl" />
           </a>
           <a
             href="https://github.com/Ajsalemo"
             target="blank"
             rel="noopener noreferrer"
             className="ml-2 sm:ml-4"
+            aria-label="Link to Github"
           >
-            <FontAwesomeIcon
-              icon={faGithubSquare}
-              className="text-base sm:text-3xl"
-            />
+            <FontAwesomeIcon icon={faGithubSquare} className="text-3xl" />
           </a>
         </div>
         <button
@@ -50,7 +46,10 @@ export default function LandingBox() {
         >
           About
         </button>
-        <a href="mailto:ajssalemo@gmail.com" className="text-xs sm:text-base">
+        <a
+          href="mailto:ajssalemo@gmail.com"
+          className="text-xs sm:text-base flex items-center font-normal"
+        >
           Contact
         </a>
       </div>
