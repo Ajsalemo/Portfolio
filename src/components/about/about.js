@@ -32,8 +32,7 @@ export default function About({ data }) {
             Charlotte’s Full Stack Web Development course. Over a period of six
             months, I learned, networked, and built collaborative projects with
             colleagues. Since then, I've been involved with Full Stack
-            Development for the last 3 years. Currently now, I work as a Open
-            Source Software Support Engineer for Microsoft - on their Azure App
+            Development for the last 3 years. Currently now, I work as a Technical Advisor for Microsoft - on their Azure App
             Services Cloud Platform team(PaaS) engaging with a wide variety of
             technical and soft skill tasks both internal and through customer
             interaction.
@@ -46,7 +45,7 @@ export default function About({ data }) {
           </p>
           <ul className="text-white pb-8 text-sm px-1">
             <li>
-              <b>Languages</b>: HTML5, Javascript, Typescript, Python, Java, C#
+              <b>Languages</b>: HTML5, Javascript, Typescript, Python, PHP, Java, C#, Ruby,
               and Bash
             </li>
             <li>
